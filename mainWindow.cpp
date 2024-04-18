@@ -1,10 +1,12 @@
+#include "window.h"
 #include "mainWindow.h"
 
+#include <QDialog>
 mainWindow::mainWindow(QWidget *parent)
 	: QMainWindow(parent)
 {
-	resize(500, 500);
 
+	resize(500, 500);
 	QPushButton* button = new QPushButton("Log In", this);
 	QPushButton* button2 = new QPushButton("Sign Up", this);
     QLabel* label = new QLabel(this);
@@ -50,9 +52,8 @@ void mainWindow::Button_Clicked()
             QMessageBox msgbox;
             msgbox.setText("sueecssfully!");
             msgbox.exec();
-            QDialog* dialog1 = new QDialog(this);
-            dialog1->resize(500, 500);
-            dialog1->show();
+            w.show();
+
         }
         else
         {
@@ -61,16 +62,7 @@ void mainWindow::Button_Clicked()
             lineEdit2->clear();
         }
     }
-    //if (str==1)
-    //{
-    //    QString msg = QString("SELECT EXISTS(SELECT 1 FROM user WHERE pwd = '%1')").arg(password);
-    //    str = data(msg);
-    //    if (str == 1)
-    //    {
-    //        QDialog* dialog1 = new QDialog(this);
-    //        dialog1->show();
-    //    }
-    //}
+
 }
 void mainWindow::Button2_Clicked()
 {

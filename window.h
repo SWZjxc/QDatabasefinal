@@ -1,12 +1,26 @@
 #pragma once
 
 #include <QDialog>
-
-class window  : public QDialog
+#include <QMainWindow>
+#include <QDialog>
+#include <QPushButton>
+#include <QLabel>
+#include <QInputDialog>
+#include <QLineEdit>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QString>
+#include <QLabel>
+#include <QFont>
+#include <QSqlDatabase>
+#include <QSqlError>
+#include <QSqlQuery>
+class Window  : public QDialog
 {
 	Q_OBJECT
 
 public:
-	window(QWidget *parent=nullptr);
-	~window();
+	Window(QWidget *parent=nullptr);
+	bool data(QString sign);
+	
 };

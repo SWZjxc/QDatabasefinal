@@ -14,7 +14,7 @@
 #include <QSqlDatabase>
 #include <QSqlError>
 #include <QSqlQuery>
-
+#include "window.h"
 class mainWindow  : public QMainWindow
 {
 	Q_OBJECT
@@ -27,4 +27,6 @@ public:
 	QLineEdit* lineEdit = new QLineEdit(this);
 	QLineEdit* lineEdit2 = new QLineEdit(this);
 	~mainWindow();
+private:
+	Window w;
 };
