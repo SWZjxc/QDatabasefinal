@@ -37,6 +37,7 @@ mainWindow::mainWindow(QWidget *parent)
 void mainWindow::Button_Clicked()
 {
     bool flag;
+     window w;
     QString username = lineEdit->text();
     QString password = lineEdit2->text();// SELECT EXISTS(SELECT 1 FROM user WHERE usr = '11111');
     QString msg = QString("SELECT * from user where %1 ").arg(username);
@@ -48,11 +49,12 @@ void mainWindow::Button_Clicked()
         if (flag)
         {
             QMessageBox msgbox;
+            window w;
             msgbox.setText("sueecssfully!");
             msgbox.exec();
-            QDialog* dialog1 = new QDialog(this);
-            dialog1->resize(500, 500);
-            dialog1->show();
+           
+            w.show();
+
         }
         else
         {

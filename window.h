@@ -1,8 +1,8 @@
 #pragma once
 
-#include <QWidget>
+#include <QDialog>
 
-class window  : public QWidget
+class window  : public QDialog
 {
 	Q_OBJECT
 
