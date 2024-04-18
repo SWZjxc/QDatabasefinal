@@ -1,5 +1,5 @@
 #include "mainWindow.h"
-#include "window.h"
+
 mainWindow::mainWindow(QWidget *parent)
 	: QMainWindow(parent)
 {
@@ -37,7 +37,6 @@ mainWindow::mainWindow(QWidget *parent)
 void mainWindow::Button_Clicked()
 {
     bool flag;
-     window w;
     QString username = lineEdit->text();
     QString password = lineEdit2->text();// SELECT EXISTS(SELECT 1 FROM user WHERE usr = '11111');
     QString msg = QString("SELECT * from user where %1 ").arg(username);
@@ -49,12 +48,11 @@ void mainWindow::Button_Clicked()
         if (flag)
         {
             QMessageBox msgbox;
-            window w;
             msgbox.setText("sueecssfully!");
             msgbox.exec();
-           
-            w.show();
-
+            QDialog* dialog1 = new QDialog(this);
+            dialog1->resize(500, 500);
+            dialog1->show();
         }
         else
         {
@@ -63,7 +61,16 @@ void mainWindow::Button_Clicked()
             lineEdit2->clear();
         }
     }
-
+    //if (str==1)
+    //{
+    //    QString msg = QString("SELECT EXISTS(SELECT 1 FROM user WHERE pwd = '%1')").arg(password);
+    //    str = data(msg);
+    //    if (str == 1)
+    //    {
+    //        QDialog* dialog1 = new QDialog(this);
+    //        dialog1->show();
+    //    }
+    //}
 }
 void mainWindow::Button2_Clicked()
 {
