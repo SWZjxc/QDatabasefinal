@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QDatabasefinal", "QDatabasefinal.vcxproj", "{06E3EE2D-5C4B-4359-BEB3-A0CEB1ED3421}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06E3EE2D-5C4B-4359-BEB3-A0CEB1ED3421}.Debug|x64.ActiveCfg = Debug|x64
+		{06E3EE2D-5C4B-4359-BEB3-A0CEB1ED3421}.Debug|x64.Build.0 = Debug|x64
+		{06E3EE2D-5C4B-4359-BEB3-A0CEB1ED3421}.Release|x64.ActiveCfg = Release|x64
+		{06E3EE2D-5C4B-4359-BEB3-A0CEB1ED3421}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6D5C918-9E4D-429F-92DA-DCBCDED8AFDA}
+	EndGlobalSection
+EndGlobal
